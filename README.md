@@ -20,6 +20,7 @@ Create an interactive dashboard in Excel to monitor sales agents' performance.
 - COUNTIF, SUMIF, IF
 - VLOOKUP
 - Charts and conditional formatting
+See [Excel_KPI_Formula_Guide.txt](./Excel_KPI_Formula_Guide.txt) for the exact formulas used in this dashboard.
 
 ## ℹ️ Note
 This is an educational project simulating an internal sales report.
