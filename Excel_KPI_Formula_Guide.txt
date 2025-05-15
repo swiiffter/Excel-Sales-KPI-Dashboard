@@ -1,0 +1,27 @@
+
+📊 Excel Sales KPI Dashboard – Useful Formulas
+
+1. ✅ Total Sales per Agent:
+=SUMIF(B:B, "Ion", E:E)
+
+2. ✅ Total Sales per Month:
+=SUMIFS(E:E, C:C, ">=01.01.2024", C:C, "<=31.01.2024")
+
+3. ✅ Sales vs Target per Agent:
+=VLOOKUP(B2, targets!A:B, 2, FALSE) - D2
+(A: agent name, B: monthly target, D: actual sales)
+
+4. ✅ Conditional Formatting Rule (Performance Color):
+=IF(D2 >= VLOOKUP(B2, targets!A:B, 2, FALSE), "green", "red")
+
+5. ✅ Count of Unique Clients:
+=SUM(1/COUNTIF(A2:A100, A2:A100))   → *Array Formula* (Ctrl + Shift + Enter in old Excel)
+
+6. ✅ Create Pivot Table:
+- Rows: Sales Agent
+- Values: Sum of Sales
+- Filter: Month
+- Add a slicer to control time range
+
+📌 Tip:
+Use Data Validation for month selection and link it to a SUMIFS range for dynamic results.
